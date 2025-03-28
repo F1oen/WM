@@ -1,4 +1,4 @@
-# 🖥️ Peer-to-Peer Report helpful commands
+# 🖥️ Peer-to-Peer Report commands
 
 ---
 
