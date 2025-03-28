@@ -165,9 +165,34 @@ chmod +x install.sh
   route -n
   ```
 - **Restart networking service:**  
-  ```bash
+```bash
   sudo systemctl restart NetworkManager
-  ```
+```
+- **ICMP access for ping:**
+```bash
+netsh advfirewall firewall add rule name="Allow ICMPv4-In" protocol=ICMPv4 dir=in action=allow
+```
+- **Check did Linux block**
+```bash
+sudo ufw disable
+```
+- **Add rule for ping:**
+```bash
+sudo ufw allow icmp
+sudo ufw enable
+```
+- **Reset network:**
+**Linux:**
+```bash
+sudo systemctl restart NetworkManager
+```
+**Windows :**
+  ```bash
+netsh int ip reset
+   ```
+
+
+
 
 ### 🔹 **System Information & Monitoring**  
 - **Check system resource usage:**  
