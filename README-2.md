@@ -1,8 +1,5 @@
 # 🖥️ Peer-to-Peer Network & Remote Access  
 
-## 📌 Overview  
-This project demonstrates how to set up a **peer-to-peer network** between Windows 10 and Linux (Ubuntu) in VMware, create user accounts, manage processes, and automate software installation using scripts.  
-
 ---
 
 ## 🚀 1. Setting Up a Peer-to-Peer Network  
@@ -199,14 +196,3 @@ chmod +x install.sh
   ```bash
   sudo chown user1:user1 filename
   ```
-
----
-
-## 📖 References  
-- [VMware Network Configuration](https://kb.vmware.com/s/article/1006480)  
-- [Linux Netplan Documentation](https://netplan.io/)  
-- [Windows PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)  
-
----
-
-This documentation provides a **structured guide** to setting up a **peer-to-peer network**, managing users, handling processes, and automating tasks. 🚀  
