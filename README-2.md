@@ -38,12 +38,17 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    ens33:
+    ens37:
       dhcp4: no
-      addresses: [192.168.1.101/24]
-      gateway4: 192.168.1.1
+      addresses:
+         - 192.168.1.101/24
+      routes:
+         - to: default
+           via: 192.168.1.101
       nameservers:
-        addresses: [8.8.8.8, 8.8.4.4]
+        addresses:
+         - 8.8.8.8
+         - 8.8.4.4
 ```
 **Save (`Ctrl + X → Y → Enter`) and apply changes:**  
 ```bash
