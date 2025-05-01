@@ -41,10 +41,10 @@ network:
     ens37:
       dhcp4: no
       addresses:
-         - 192.168.1.101/24
+         - 192.168.1.150  
       routes:
          - to: default
-           via: 192.168.1.101
+           via: 192.168.1.150  
       nameservers:
         addresses:
          - 8.8.8.8
